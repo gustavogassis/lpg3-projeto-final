@@ -1,0 +1,468 @@
+{
+  "info": {
+    "name": "SPOLPG3 Projeto Final",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "Cadastrar Disciplina",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http:localhost:8000/disciplinas",
+          "protocol": "",
+          "host": [
+            "http:localhost:8000"
+          ],
+          "path": [
+            "disciplinas"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Redes de Computadores\",\n    \"codigo\": \"SPOREDC\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Cadastrar Matrícula",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http:localhost:8000/matriculas",
+          "protocol": "",
+          "host": [
+            "http:localhost:8000"
+          ],
+          "path": [
+            "matriculas"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"aluno_id\": 2,\n    \"turma_id\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Cadastrar Período",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http:localhost:8000/periodos",
+          "protocol": "",
+          "host": [
+            "http:localhost:8000"
+          ],
+          "path": [
+            "periodos"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"ano\": 2025,\n    \"semestre\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Cadastrar Turma",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http:localhost:8000/turmas",
+          "protocol": "",
+          "host": [
+            "http:localhost:8000"
+          ],
+          "path": [
+            "turmas"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"disciplina_id\": 1,\n    \"professor_id\": 1,\n    \"periodo_id\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Health",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http:localhost:8000/health",
+          "protocol": "",
+          "host": [
+            "http:localhost:8000"
+          ],
+          "path": [
+            "health"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Usuario",
+      "item": [
+        {
+          "name": "Delete User By Id",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/user/2",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "user",
+                "2"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get All Users",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/users",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "users"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get User By Id",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/user/2",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "user",
+                "2"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get All Professores",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/users/professores",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "users",
+                "professores"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Notas",
+      "item": [
+        {
+          "name": "Cadastrar Nota",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/notas",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "notas"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"matricula_id\": 1,\n    \"descricao\": \"Trabalho 1 - API\",\n    \"valor\": 9.5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get Nota",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/matriculas/1/notas",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "matriculas",
+                "1",
+                "notas"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"aluno_id\": 2,\n    \"turma_id\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Atualizar Nota",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/notas",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "notas"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"matricula_id\": 1,\n    \"descricao\": \"Trabalho 1 - API\",\n    \"valor\": 9.5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Deletar Nota",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/notas/1",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "notas",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aluno",
+      "item": [
+        {
+          "name": "Get All Alunos",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/users/alunos",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "users",
+                "alunos"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Aluno Historico",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http:localhost:8000/alunos/2/historico",
+              "protocol": "",
+              "host": [
+                "http:localhost:8000"
+              ],
+              "path": [
+                "alunos",
+                "2",
+                "historico"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
