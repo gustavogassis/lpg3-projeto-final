@@ -6,4 +6,5 @@ Como rodar
 * Subir servidor rodando php -S localhost:8000
 
 Acessar endpoints que estão no collection.json, que estão no formato Postman Collections
+
 As rotas estão definidas no arquivo index.php
